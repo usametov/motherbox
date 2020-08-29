@@ -1,8 +1,8 @@
-(defproject motherbox "0.1.1-SNAPSHOT"
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.946"]
-                 [reagent "0.7.0"]
-                 [re-frame "0.10.2"]
+(defproject motherbox "0.1.2-SNAPSHOT"
+  :dependencies [[org.clojure/clojure "1.10.1"]
+                 [org.clojure/clojurescript "1.10.773"]
+                 [reagent "0.8.1"]
+                 [re-frame "0.10.7"]
                  [cljs-react-material-ui "0.2.50"]
                  [cljsjs/react-dom "16.0.0-0"]
                  [cljsjs/react "16.0.0-0"]]
@@ -14,7 +14,7 @@
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
   :figwheel {:css-dirs ["resources/public/css"]}
   :profiles {:dev {:dependencies [[binaryage/devtools "0.9.7"]]
-                   :plugins      [[lein-figwheel "0.5.9"]
+                   :plugins      [[lein-figwheel "0.5.20"]
                                   [lein-ancient "0.6.10"]]}}
   :cljsbuild {:builds [{:id           "dev"
                         :source-paths ["src/cljs"]
