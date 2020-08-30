@@ -1,6 +1,6 @@
 (ns bookmarks.core
-  (:require ;[cljsjs.material-ui]
-            [reagent.core :as reagent]
+  (:require [reagent.dom :as reagent]
+            ;[reagent.core :as reagent]
             [re-frame.core :as re-frame]
             [bookmarks.events]
             [bookmarks.subs]
