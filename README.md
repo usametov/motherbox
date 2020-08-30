@@ -36,4 +36,4 @@ After that you can build the docker container with the given `Dockerfile`.
 ![screenshot](https://github.com/meandor/motherbox/raw/master/docs/screenshot.png)
 
 ## Links
-* http://www.material-ui.com/
+* https://github.com/day8/re-com
