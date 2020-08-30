@@ -1,5 +1,5 @@
 (ns bookmarks.core
-  (:require [cljsjs.material-ui]
+  (:require ;[cljsjs.material-ui]
             [reagent.core :as reagent]
             [re-frame.core :as re-frame]
             [bookmarks.events]
