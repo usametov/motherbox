@@ -33,13 +33,6 @@
               ]])
 
 (defn bookmark-card [bookmark]
-  ; [ui/card {:class "bookmark-tile"}
-  ;  [ui/card-title {:title (:title bookmark)}]
-  ;  [ui/list
-  ;   (for [link (:items bookmark)]
-  ;     ^{:key link} [ui/list-item {:on-click #(navigate-to (:href link))
-  ;                                 :class    "link"}
-  ;                   (:title link)])]]
  )
 
 (comment 
@@ -54,20 +47,13 @@
  )
 
 (defn search-bar []  
-  (let [search-term (reagent/atom nil)]
+  (let [query (reagent/atom nil)]
     [input-textarea     
-     :model search-term
+     :model query
      :width "480px"
      :placeholder  "Search bookmarks"
-     :on-change    #(re-frame/dispatch [:filter-by search-term])
+     :on-change    #(re-frame/dispatch [:filter-by query])
      ]))
-
-(defn header []
-  ; (let [name (re-frame/subscribe [:name])]
-  ;   [:header
-  ;    [ui/app-bar {:title                 (str @name " Bookmarks")
-  ;                 :show-menu-icon-button false}]])
-  )
 
 (defn main-panel []
   [v-box   
@@ -79,12 +65,6 @@
               [search-bar]
               [bookmarks-cards]
               ]
-   ]
-  ; [ui/mui-theme-provider
-  ;  {:mui-theme (get-mui-theme {:palette {:primary1Color (color :teal500)}})}
-  ;  [:div
-  ;   [header]
-  ;   [:main
-  ; ]]]
+   ]  
   )
 
