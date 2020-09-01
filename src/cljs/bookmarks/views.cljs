@@ -53,6 +53,7 @@
      :width "480px"
      :placeholder  "Search bookmarks"
      :on-change    #(re-frame/dispatch [:filter-by query])
+     :on-change-on-blur? true
      ]))
 
 (defn main-panel []
