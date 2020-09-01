@@ -1,6 +1,6 @@
 # MotherBox
 
-A [re-frame](https://github.com/Day8/re-frame) bookmarks application with material design.
+A [re-frame](https://github.com/Day8/re-frame) bookmarks application using re-com components.
  
 > Mother Box can explain it better than I. She is a living computer connected to the Source.
 >
