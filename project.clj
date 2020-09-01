@@ -11,10 +11,11 @@
   :min-lein-version "2.5.3"
   :source-paths ["src/clj"]
   :clean-targets ^{:protect false} ["resources/public/js/compiled" "target"]
-  :figwheel {:css-dirs ["resources/public/css"]}
-  :profiles {:dev {:dependencies [[binaryage/devtools "0.9.7"]]
+  :figwheel {:css-dirs ["resources/public/assets/css"]}
+  :profiles {:dev {:dependencies [[http-kit "2.4.0"]
+                                  [binaryage/devtools "0.9.7"]]
                    :plugins      [[lein-figwheel "0.5.20"]
-                                  [lein-ancient "0.6.10"]]}}
+                                  [lein-ancient "0.6.15"]]}}
   :cljsbuild {:builds [{:id           "dev"
                         :source-paths ["src/cljs"]
                         :figwheel     {:on-jsload "bookmarks.core/mount-root"}
